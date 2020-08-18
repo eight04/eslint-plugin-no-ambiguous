@@ -1,0 +1,29 @@
+{
+  "name": "eslint-plugin-no-ambiguous",
+  "version": "0.0.0",
+  "description": "A collection of rules that makes you code explicitly.",
+  "keywords": [
+    "eslint",
+    "eslintplugin"
+  ],
+  "main": "./lib/index.js",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "test": "eslint **/*.js --cache && c8 --reporter=lcov mocha \"tests/**/*.js\"",
+    "preversion": "npm test",
+    "postversion": "git push --follow-tags && npm publish"
+  },
+  "repository": "eight04/eslint-plugin-no-ambiguous",
+  "author": "eight04 <eight04@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "c8": "^7.3.0",
+    "eslint": "^7.7.0",
+    "mocha": "^8.1.1"
+  },
+  "peerDependencies": {
+    "eslint": "^7.7.0"
+  }
+}
