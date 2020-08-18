@@ -15,6 +15,6 @@ Rules
 Changelog
 ---------
 
-* 0.1.0 (Next)
+* 0.1.0 (Aug 18, 2020)
 
   - Initial release.
