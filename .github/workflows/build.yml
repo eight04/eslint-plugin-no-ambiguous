@@ -7,4 +7,4 @@ jobs:
       - uses: actions/setup-node@v1
       - run: npm install
       - run: npm test
-      - run: npx codecov
+      - uses: codecov/codecov-action@v1
