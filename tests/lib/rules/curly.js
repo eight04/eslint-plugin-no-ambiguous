@@ -17,6 +17,9 @@ tester.run("curly", rule, {
     },
     {
       code: "var foo = `foo {{bar}}`"
+    },
+    {
+      code: "var foo = String.raw`foo {bar}`"
     }
   ],
   invalid: [
